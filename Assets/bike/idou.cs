@@ -13,6 +13,7 @@ using SoftGear.Strix.Unity.Runtime.Event;
 public class idou : StrixBehaviour
 {
 	public GameObject mainCamera;
+	public GameObject TrackingSpace;
 	public GameObject Maker;
 	public int zAdjust = -25;
 	public float speed;
@@ -33,7 +34,7 @@ public class idou : StrixBehaviour
 		//カメラはプレイヤーと同じ位置にする
 		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y+4, transform.position.z + zAdjust-5);
 		Maker.transform.position = new Vector3(transform.position.x+30, transform.position.y + 100, transform.position.z + zAdjust);
-
+		TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
 
 
 		if (Input.GetKey(KeyCode.RightArrow))
