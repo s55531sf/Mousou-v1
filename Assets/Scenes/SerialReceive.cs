@@ -26,7 +26,7 @@ public class SerialReceive : MonoBehaviour
         {
             Debug.Log(data[0]);//Unityのコンソールに受信データを表示
             a = int.Parse(data[0]);
-            ugoke.Speed = a;
+           // ugoke.Speed = a;
             Debug.Log("a");
             Debug.Log(a);
 

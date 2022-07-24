@@ -34,7 +34,7 @@ public class idou : StrixBehaviour
 		//カメラはプレイヤーと同じ位置にする
 		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y+4, transform.position.z + zAdjust-5);
 		Maker.transform.position = new Vector3(transform.position.x+30, transform.position.y + 100, transform.position.z + zAdjust);
-		TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
+		//TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
 
 
 		if (Input.GetKey(KeyCode.RightArrow))
@@ -70,4 +70,9 @@ public class idou : StrixBehaviour
 			a = 0;
         }
 	}
+public void speedup() {
+	speed += -10;
 }
+}
+
+
