@@ -73,6 +73,11 @@ public class idou : StrixBehaviour
 public void speedup() {
 	speed += -10;
 }
+
+	public void speedset(int amount)
+	{
+		speed = amount;
+	}
 }
 
 

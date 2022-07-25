@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Speedtext : MonoBehaviour
+public class Speedtext_b : MonoBehaviour
 {
     // UI Text指定用
     public Text TextFrame;
@@ -11,7 +11,7 @@ public class Speedtext : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Bike = GameObject.Find("Bike_R"); //Unityちゃんをオブジェクトの名前から取得して変数に格納する
+        Bike = GameObject.Find("Bike_B"); //Unityちゃんをオブジェクトの名前から取得して変数に格納する
         script = Bike.GetComponent<idou>(); //u
     }
 
@@ -19,6 +19,6 @@ public class Speedtext : MonoBehaviour
     void Update()
     {
         float frame = script.speed;
-        TextFrame.text = string.Format("{0} km/h", frame*-1);
+        TextFrame.text = string.Format("{0} km/h", frame * -1);
     }
 }
