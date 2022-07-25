@@ -8,10 +8,17 @@ public class Destroy_PB : MonoBehaviour
     public GameObject test;
     void Start()
     {
-        if (Botan_PB.flag_p != 2)
+        Debug.Log("PB,flag");
+        Debug.Log("Start.flag_p");
+        if (all.flag_p != 2 && all.flag_p!=0)
         {
             Destroy(test);
         }
+    }
+
+    void Updata()
+    {
+       // Botan_PR.flag_p = 0;
     }
 
 }

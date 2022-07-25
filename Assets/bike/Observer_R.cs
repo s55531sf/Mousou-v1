@@ -12,7 +12,7 @@ public class Observer_R : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Botan_OR.flag_p != 3)
+        if (all.flag_p == 3)
         {
            mainCamera.transform.position = bike.transform.position + new Vector3(0,1, -10);    }
 

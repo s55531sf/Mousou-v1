@@ -9,9 +9,9 @@ public class test123 : MonoBehaviour
     void Start()
     {
         Debug.Log("test123");
-        if (Botan_PR.flag_p == 1)
+        if (all.flag_p == 1)
         {
-            Destroy(test);
+           // Destroy(test);
         }
     }
 

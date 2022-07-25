@@ -5,13 +5,16 @@ using UnityEngine;
 
 public class Botan_PR : MonoBehaviour
 {
-    public static int flag_p = 0;
+    public GameObject Bike;
+   // public GameObject item;
+    private all spd;
     // ボタンが押された場合、今回呼び出される関数
     public void OnClick()
     {
-        flag_p = 1;
-        Debug.Log("押された!");  // ログを出力
-        Debug.Log(flag_p);
-        SceneManager.LoadSceneAsync("Main");
+        spd = Bike.GetComponent<all>();
+        spd.set(1);
+        Debug.Log("1押された!");  // ログを出力
+                              // Debug.Log(Botan_all.flag_p);
+                              //SceneManager.LoadSceneAsync("Main");
     }
 }

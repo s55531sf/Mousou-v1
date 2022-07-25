@@ -31,6 +31,8 @@ public class StrixConnectGUI : MonoBehaviour {
     }
 
     public void Connect() {
+        all.flag_p = 0;
+        Debug.Log(all.flag_p);
         LogManager.Instance.Filter = logLevel;
 
         StrixNetwork.instance.applicationId = applicationId;

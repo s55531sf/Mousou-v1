@@ -8,14 +8,14 @@ public class Destroy_PR : MonoBehaviour
     public GameObject test;
     void Start()
     {
-        if (Botan_PR.flag_p != 1)
+        if (all.flag_p != 1 && all.flag_p != 0)
         {
             Destroy(test);
         }
     }
     void Updata()
     {
-        Botan_PR.flag_p = 0;
+       // Botan_PR.flag_p = 0;
     }
 
 }
