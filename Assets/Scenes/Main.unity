@@ -995,8 +995,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8054454546668813976, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
+      propertyPath: Bike
+      value: 
+      objectReference: {fileID: 6669599918116753470}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
+--- !u!1 &351127124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8054454546668813971, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
+  m_PrefabInstance: {fileID: 351127123}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &366753056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1050,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bike: {fileID: 8325901665103604346}
-  item: {fileID: 0}
+  item: {fileID: 1109361912}
+--- !u!1 &583265914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 583265916}
+  - component: {fileID: 583265915}
+  m_Layer: 0
+  m_Name: Destroy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &583265915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583265914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24dcb2f546b73841a45f4d961444285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BikeR: {fileID: 6669599918116753470}
+  BikeB: {fileID: 8325901665103604346}
+  itemR: {fileID: 351127124}
+  itemB: {fileID: 1109361912}
+--- !u!4 &583265916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583265914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.405674, y: 4.973477, z: -75.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &635914228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +1438,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e83a5e0e17e4d174790adef806bf060d, type: 3}
   m_Name: 
@@ -1574,6 +1630,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1109361912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6846077933284855940, guid: 8b1648e6f05eeb34286418cbf9c074d7, type: 3}
+  m_PrefabInstance: {fileID: 1925001535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1263790716
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,6 +2398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: item _B
       objectReference: {fileID: 0}
+    - target: {fileID: 6846077933284855951, guid: 8b1648e6f05eeb34286418cbf9c074d7, type: 3}
+      propertyPath: Bike
+      value: 
+      objectReference: {fileID: 8325901665103604346}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b1648e6f05eeb34286418cbf9c074d7, type: 3}
 --- !u!114 &2009965959
@@ -2356,6 +2421,7 @@ MonoBehaviour:
   Maker: {fileID: 1263790716}
   zAdjust: 5
   speed: 0
+  DesFlag: 1
 --- !u!54 &2009965961
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2534,7 +2600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bike: {fileID: 6669599918116753470}
-  item: {fileID: 0}
+  item: {fileID: 351127124}
 --- !u!1 &2143487146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3922,7 +3988,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6669599918116753470}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a34acb4e70bdafa4e87473e0033b7261, type: 3}
   m_Name: 
@@ -4321,6 +4387,7 @@ MonoBehaviour:
   Maker: {fileID: 1263790716}
   zAdjust: 5
   speed: 0
+  DesFlag: 2
 --- !u!65 &8325901665103604350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4357,7 +4424,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8325901665103604346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5181bb10a8eb15e43a1ac27321edcaf7, type: 3}
   m_Name: 

@@ -17,6 +17,7 @@ public class idou : StrixBehaviour
 	public GameObject Maker;
 	public int zAdjust = -25;
 	public float speed;
+	public int DesFlag;
     int a;
 
 	void Start()
@@ -31,11 +32,14 @@ public class idou : StrixBehaviour
         {
 			return;
         }
+
+		if(Botan_PR.flag_p == DesFlag)
+        {
 		//カメラはプレイヤーと同じ位置にする
 		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y+4, transform.position.z + zAdjust-5);
 		Maker.transform.position = new Vector3(transform.position.x+30, transform.position.y + 100, transform.position.z + zAdjust);
 		//TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
-
+        }
 
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
