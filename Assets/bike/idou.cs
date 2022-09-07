@@ -33,7 +33,9 @@ public class idou : StrixBehaviour
 			return;
         }
 
-		if(Botan_PR.flag_p == DesFlag)
+		Debug.Log(Botan_PB.flag_p);
+
+		if (Botan_PB.flag_p == DesFlag || Botan_PR.flag_p == DesFlag)
         {
 		//カメラはプレイヤーと同じ位置にする
 		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y+4, transform.position.z + zAdjust-5);
