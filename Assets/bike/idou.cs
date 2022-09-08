@@ -40,18 +40,19 @@ public class idou : StrixBehaviour
 		//カメラはプレイヤーと同じ位置にする
 		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y+4, transform.position.z + zAdjust-5);
 		Maker.transform.position = new Vector3(transform.position.x+30, transform.position.y + 100, transform.position.z + zAdjust);
-		//TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
-        }
+			//mainCamera.transform.Rotate(0, transform.localEulerAngles.y, 0);
+			//TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
+		}
 
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
 			transform.Rotate(0, 50 * Time.deltaTime, 0);
-			mainCamera.transform.Rotate(0, 50 * Time.deltaTime, 0);
+			mainCamera.transform.Rotate(0, 25 * Time.deltaTime, 0);
 		}
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
 			transform.Rotate(0, -50 * Time.deltaTime, 0);
-			mainCamera.transform.Rotate(0, -50 * Time.deltaTime, 0);
+			mainCamera.transform.Rotate(0, -25 * Time.deltaTime, 0);
 		}
 		if (Input.GetKeyDown(KeyCode.UpArrow))
 		{

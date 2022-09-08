@@ -21,4 +21,6 @@ public class Speedtext : MonoBehaviour
         float frame = script.speed;
         TextFrame.text = string.Format("{0} km/h", frame*-1);
     }
+
+    
 }
