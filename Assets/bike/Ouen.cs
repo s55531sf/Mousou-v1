@@ -24,13 +24,14 @@ public class Ouen : MonoBehaviour
         ouen3.position += new Vector3(0.3f, 0, 0);
         ouen4.position += new Vector3(0.4f, 0, 0);
         ouen5.position += new Vector3(0.5f, 0, 0);
+        //ouen1.position = new Vector3(-488, 132, 0);
     }
 
-    public void ouen(int kazu_o)
+    public void ouenflag(int kazu_o)
     {
         if (kazu_o == 1)
         {
-           // ouen1.position.x = new Vector3(-488, 132, 0);
+           ouen1.position = new Vector3(-488, 132, 0);
         }
         else if (kazu_o == 2)
         {

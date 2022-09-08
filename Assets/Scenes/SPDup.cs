@@ -8,6 +8,7 @@ public class SPDup : MonoBehaviour
     public GameObject Bike;
     public GameObject item;
     private idou spd;
+    private Ouen oue;
 
     void Update()
     {
@@ -17,7 +18,9 @@ public class SPDup : MonoBehaviour
 
         if (dis < 4.6f)
         {
+
             spd.speedup();
+           // oue.ouenflag(1);
             Debug.Log("aaa");
             Destroy(item);
         }
