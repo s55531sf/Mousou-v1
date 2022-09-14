@@ -52,6 +52,7 @@ public class Ouen : MonoBehaviour
         else if (kazu_o == 6)
         {
             ouen5.position = new Vector3(-60, 460, 92);
+            kazu_o = 1;
         }
     }
 }
