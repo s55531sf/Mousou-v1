@@ -35,24 +35,36 @@ public class idou : StrixBehaviour
 
 		Debug.Log(Botan_PB.flag_p);
 
+		
+
 		if (Botan_PB.flag_p == DesFlag || Botan_PR.flag_p == DesFlag)
         {
 		//カメラはプレイヤーと同じ位置にする
 		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y+4, transform.position.z + zAdjust-5);
 		Maker.transform.position = new Vector3(transform.position.x+30, transform.position.y + 100, transform.position.z + zAdjust);
-			//mainCamera.transform.Rotate(0, transform.localEulerAngles.y, 0);
-			//TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
+            //mainCamera.transform.Rotate(0, transform.localEulerAngles.y, 0);
+            //TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
+
+        }
+        else
+        {
+			return;
+        }
+
+		if (Input.GetKeyDown(KeyCode.A))
+		{
+			mainCamera.transform.Rotate(0, transform.localEulerAngles.y, 0);
 		}
 
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
 			transform.Rotate(0, 50 * Time.deltaTime, 0);
-			mainCamera.transform.Rotate(0, 25 * Time.deltaTime, 0);
+			mainCamera.transform.Rotate(0, 50 * Time.deltaTime, 0);
 		}
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
 			transform.Rotate(0, -50 * Time.deltaTime, 0);
-			mainCamera.transform.Rotate(0, -25 * Time.deltaTime, 0);
+			mainCamera.transform.Rotate(0, -50 * Time.deltaTime, 0);
 		}
 		if (Input.GetKeyDown(KeyCode.UpArrow))
 		{

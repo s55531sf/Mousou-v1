@@ -18,7 +18,8 @@ public class SPDup : MonoBehaviour
         spd = Bike.GetComponent<idou>();
         oue = ouennoyatu.GetComponent<Ouen>();
 
-        if (dis < 4.6f)
+        //if (dis < 4.6f)
+        if (dis >0&&dis<5000)
         {
             spd.speedup();
             Debug.Log("aaa");
