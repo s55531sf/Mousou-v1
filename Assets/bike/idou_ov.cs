@@ -15,7 +15,7 @@ public class idou_ov : MonoBehaviour
 	void Start()
     {
 		spd = 300;
-		if (Botan_OR.flag_p == DesFlag)
+		if (Botan_OR.flag_p == DesFlag||Botan_OB.flag_p == DesFlag)
 		{
 			//カメラはプレイヤーと同じ位置にする
 			mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
@@ -28,7 +28,8 @@ public class idou_ov : MonoBehaviour
 
 	void Update()
 	{
-		if (Botan_OR.flag_p != DesFlag)
+		//Debug.Log(Botan_OB.flag_p);
+		if (Botan_OR.flag_p != DesFlag && Botan_OB.flag_p != DesFlag)
 		{
 			return;
 

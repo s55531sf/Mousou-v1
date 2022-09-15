@@ -33,7 +33,7 @@ public class idou : StrixBehaviour
 			return;
         }
 
-		Debug.Log(Botan_PB.flag_p);
+		//Debug.Log(Botan_PB.flag_p);
 
 		
 

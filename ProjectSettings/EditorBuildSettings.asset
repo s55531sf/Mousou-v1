@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/RedWin.unity
+    guid: 662e602265c86b04c929f80c17c6ae90
+  - enabled: 1
+    path: Assets/Scenes/BlueWin.unity
+    guid: 7677851fbb601504f8e3876aac7efa68
   m_configObjects: {}
