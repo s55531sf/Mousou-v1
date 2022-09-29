@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlueWin.unity
     guid: 7677851fbb601504f8e3876aac7efa68
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a19ce7a7dca372843a77b51b925960a6, type: 2}
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 269441fbe6e66ac4e8014b75440cedf5, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7e99d0ba851f08d498d58a8e81ccc51e, type: 2}
