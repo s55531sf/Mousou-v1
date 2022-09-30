@@ -61,7 +61,18 @@ public class idou : StrixBehaviour
 			transform.Rotate(0, 50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, 50 * Time.deltaTime, 0);
 		}
-		if (Input.GetKey(KeyCode.LeftArrow))
+		if (Arduino.handle_dif < -10)
+		{
+			transform.Rotate(0, 50 * Time.deltaTime, 0);
+			mainCamera.transform.Rotate(0, 50 * Time.deltaTime, 0);
+		}
+		if (Input.GetKey(KeyCode.LeftArrow) )
+		{
+			transform.Rotate(0, -50 * Time.deltaTime, 0);
+			mainCamera.transform.Rotate(0, -50 * Time.deltaTime, 0);
+		}
+
+		if (Arduino.handle_dif > 10)
 		{
 			transform.Rotate(0, -50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, -50 * Time.deltaTime, 0);
@@ -78,7 +89,10 @@ public class idou : StrixBehaviour
 				speed++;
             }
 		}
-		transform.Translate(speed/1000, 0, 0);
+
+		speed = Arduino.speed_arduino*-1; //Arduino‚©‚çspeed
+
+		transform.Translate(speed/100, 0, 0);
 		a++;
         if (a > 2000)
         {
