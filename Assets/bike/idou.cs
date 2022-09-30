@@ -18,6 +18,8 @@ public class idou : StrixBehaviour
 	public int zAdjust = -25;
 	public float speed;
 	public int DesFlag;
+	public int left = 10;
+	public int right = -15;
     int a;
 
 	void Start()
@@ -61,7 +63,7 @@ public class idou : StrixBehaviour
 			transform.Rotate(0, 50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, 50 * Time.deltaTime, 0);
 		}
-		if (Arduino.handle_dif < -10)
+		if (Arduino.handle_dif < right)
 		{
 			transform.Rotate(0, 50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, 50 * Time.deltaTime, 0);
@@ -72,7 +74,7 @@ public class idou : StrixBehaviour
 			mainCamera.transform.Rotate(0, -50 * Time.deltaTime, 0);
 		}
 
-		if (Arduino.handle_dif > 10)
+		if (Arduino.handle_dif > left)
 		{
 			transform.Rotate(0, -50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, -50 * Time.deltaTime, 0);
