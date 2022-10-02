@@ -92,9 +92,14 @@ public class idou : StrixBehaviour
             }
 		}
 
-        if (Arduino.speed_arduino != 0)
+        if (Arduino.speed_arduino != 0&&timer.flag_stop!=1)
         {
 		speed = Arduino.speed_arduino*-1; //Arduino‚©‚çspeed
+        }
+
+        if (timer.flag_stop == 1)
+        {
+			speed = 0;
         }
 
 		transform.Translate(speed/100, 0, 0);
