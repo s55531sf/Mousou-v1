@@ -8,8 +8,10 @@ public class SPDup : MonoBehaviour
     public GameObject Bike;
     public GameObject item;
     public GameObject ouennoyatu;
+    public GameObject ouennoyatu_vr;
     private idou spd;
     private Ouen oue;
+    private Ouen_VR oue_vr;
 
     void Update()
     {
@@ -17,6 +19,7 @@ public class SPDup : MonoBehaviour
         float dis = Vector3.Distance(aaa, this.transform.position);
         spd = Bike.GetComponent<idou>();
         oue = ouennoyatu.GetComponent<Ouen>();
+        oue_vr = ouennoyatu_vr.GetComponent<Ouen_VR>();
 
         //if (dis < 4.6f)
         if (dis >0&&dis<5000)
@@ -24,6 +27,7 @@ public class SPDup : MonoBehaviour
             spd.speedup();
             Debug.Log("aaa");
             oue.ouenflag();
+            oue_vr.ouenflag();
             Destroy(item);
         }
     }
