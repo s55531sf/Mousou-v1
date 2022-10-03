@@ -29,6 +29,12 @@ public class idou : StrixBehaviour
     }
 	void Update()
 	{
+		left = InputManager.value;
+		right = (InputManager.value+5)*-1;
+		Debug.LogWarning("left");
+		Debug.LogWarning(left);
+		Debug.LogWarning("right");
+		Debug.LogWarning(right);
 
 		if (isLocal == false)
         {
