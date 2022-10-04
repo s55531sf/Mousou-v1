@@ -15,7 +15,7 @@ public class Arduino : MonoBehaviour
     int handle=0;
     public static int handle_dif = 0;
     public static int speed_arduino = 0;
-    SerialPort portNo = new SerialPort("COM9", 9600);
+    SerialPort portNo = new SerialPort(PortInput.port, 9600);
     // Start is called before the first frame update
     void Start()
     {

@@ -15,11 +15,11 @@ public class Ouen : MonoBehaviour
     public RectTransform ouen8;
     public RectTransform ouen9;
     public RectTransform ouen10;
-    int kazu_o = 0;
+    public static float kazu_o = 0;
 
     void Start()
     {
-
+        InvokeRepeating("down", 1, 5);
     }
 
     // Update is called once per frame
@@ -36,6 +36,17 @@ public class Ouen : MonoBehaviour
         ouen9.position += new Vector3(-0.5f, 0, 0);
         ouen10.position += new Vector3(-0.5f, 0, 0);
         //ouen1.position = new Vector3(-488, 132, 0);
+    }
+
+    void down()
+    {
+        if (kazu_o > 0)
+        {
+            kazu_o--;
+            Debug.LogWarning("down");
+            Debug.LogWarning(kazu_o);
+
+        }
     }
 
     public void ouenflag()
@@ -87,7 +98,7 @@ public class Ouen : MonoBehaviour
         else if (kazu_o == 10)
         {
             ouen10.position = new Vector3(2200, 300, 92);
-            kazu_o = 1;
+            kazu_o = 10;
         }
 
     }

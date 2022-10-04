@@ -31,11 +31,12 @@ public class idou : StrixBehaviour
 	{
 		left = InputManager.value;
 		right = (InputManager.value+5)*-1;
+		/*
 		Debug.LogWarning("left");
 		Debug.LogWarning(left);
 		Debug.LogWarning("right");
 		Debug.LogWarning(right);
-
+		*/
 		if (isLocal == false)
         {
 			return;
@@ -108,7 +109,7 @@ public class idou : StrixBehaviour
 			speed = 0;
         }
 
-		transform.Translate(speed/100, 0, 0);
+		transform.Translate(speed * ((1 + (Ouen_VR.kazu_o / 10)) * (1 + (Ouen.kazu_o / 10))) / 100, 0, 0);
 		a++;
         if (a > 2000)
         {
@@ -120,7 +121,7 @@ public class idou : StrixBehaviour
         }
 	}
 public void speedup() {
-	speed += -10;
+	//speed += -10;
 }
 
 	public void speedset(int amount)
