@@ -2,24 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedorBlue : MonoBehaviour
+public class ovmode : MonoBehaviour
 {
     public GameObject red;
     public GameObject blue;
     // Start is called before the first frame update
     void Start()
     {
-        if (Botan_PR.flag_p == 1)
+        if (Botan_OR.flag_p == 3||Botan_OB.flag_p==4)
         {
-            red.SetActive(true);
+            Destroy(red);
+            Destroy(blue);
             //blue.SetActive(false);
-        }
-        else if (Botan_PB.flag_p==2 )
-        {
-            blue.SetActive(true);
-            //red.SetActive(false);
         }
     }
 
-    
 }

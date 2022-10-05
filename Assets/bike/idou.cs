@@ -72,7 +72,7 @@ public class idou : StrixBehaviour
 		}
 		if (Arduino.handle_dif < right)
 		{
-			transform.Rotate(0, 50 * Time.deltaTime, 0);
+			transform.Rotate(0, -50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, 50 * Time.deltaTime, 0);
 		}
 		if (Input.GetKey(KeyCode.LeftArrow) )
@@ -83,7 +83,7 @@ public class idou : StrixBehaviour
 
 		if (Arduino.handle_dif > left)
 		{
-			transform.Rotate(0, -50 * Time.deltaTime, 0);
+			transform.Rotate(0, 50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, -50 * Time.deltaTime, 0);
 		}
 		if (Input.GetKeyDown(KeyCode.UpArrow))
