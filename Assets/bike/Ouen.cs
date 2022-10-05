@@ -16,6 +16,8 @@ public class Ouen : MonoBehaviour
     public RectTransform ouen9;
     public RectTransform ouen10;
     public static float kazu_o = 0;
+    public static int num_o = 0;
+    int flag_o = 0;
 
     void Start()
     {
@@ -51,54 +53,56 @@ public class Ouen : MonoBehaviour
 
     public void ouenflag()
     {
+        num_o++;
         kazu_o += 1;
+        flag_o++;
         Debug.Log("kazu_o");
         Debug.Log(kazu_o);
-        if (kazu_o == 1)
+        if (flag_o == 1)
         {
             ouen1.position = new Vector3(2200, 300, 92);
         }
-        else if (kazu_o == 2)
+        else if (flag_o == 2)
         {
             ouen2.position = new Vector3(2200, 400, 92);
         }
-        else if (kazu_o == 3)
+        else if (flag_o == 3)
         {
             ouen3.position = new Vector3(2200, 500, 92);
         }
-        else if (kazu_o == 4)
+        else if (flag_o == 4)
         {
             ouen4.position = new Vector3(2200, 600, 92);
         }
-        else if (kazu_o == 5)
+        else if (flag_o == 5)
         {
             ouen5.position = new Vector3(2200, 800, 92);
 
         }
-        else if (kazu_o == 6)
+        else if (flag_o == 6)
         {
             ouen6.position = new Vector3(2200, 700, 92);
 
         }
-        else if (kazu_o == 7)
+        else if (flag_o == 7)
         {
             ouen7.position = new Vector3(2200, 400, 92);
 
         }
-        else if (kazu_o == 8)
+        else if (flag_o == 8)
         {
             ouen8.position = new Vector3(2200, 900, 92);
 
         }
-        else if (kazu_o == 9)
+        else if (flag_o == 9)
         {
             ouen9.position = new Vector3(2200, 1000, 92);
 
         }
-        else if (kazu_o == 10)
+        else if (flag_o == 10)
         {
             ouen10.position = new Vector3(2200, 300, 92);
-            kazu_o = 10;
+            flag_o = 1;
         }
 
     }
