@@ -18,8 +18,8 @@ public class kando : MonoBehaviour
             if (flag == 0)
             {
             input.SetActive(true);
-            start_r.SetActive(false);
-                start_b.SetActive(false);
+            start_r.SetActive(false); //入力完了時のEnterでスタートするのを防ぐ
+            start_b.SetActive(false);
                 flag = 1;
             }else if (flag == 1)
             {

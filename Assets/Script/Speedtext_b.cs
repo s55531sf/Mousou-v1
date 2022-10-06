@@ -11,14 +11,14 @@ public class Speedtext_b : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Bike = GameObject.Find("Bike_B"); //Unityちゃんをオブジェクトの名前から取得して変数に格納する
-        script = Bike.GetComponent<idou>(); //u
+        Bike = GameObject.Find("Bike_B"); 
+        script = Bike.GetComponent<idou>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        float frame = script.speed;
-        TextFrame.text = string.Format("{0} km/h", frame * -1);
+        float frame = script.speed2;
+        TextFrame.text = string.Format("{0:f2} km/h", frame * -1);
     }
 }

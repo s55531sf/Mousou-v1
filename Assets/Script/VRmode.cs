@@ -10,7 +10,7 @@ public class VRmode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Botan_VR.flag_vr == 0)
+        if (Botan_VR.flag_vr == 0) //VR mode‘I‘ð
         {
             obj.SetActive(false);
         }

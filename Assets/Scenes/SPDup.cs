@@ -16,7 +16,7 @@ public class SPDup : MonoBehaviour
     void Update()
     {
         Vector3 aaa = Bike.transform.position;
-        float dis = Vector3.Distance(aaa, this.transform.position);
+        float dis = Vector3.Distance(aaa, this.transform.position); //自転車と応援オブジェクトの距離
         spd = Bike.GetComponent<idou>();
         oue = ouennoyatu.GetComponent<Ouen>();
         oue_vr = ouennoyatu_vr.GetComponent<Ouen_VR>();
@@ -24,9 +24,8 @@ public class SPDup : MonoBehaviour
         //if (dis < 4.6f)
         if (dis >0&&dis<5000)
         {
-            spd.speedup();
-            Debug.Log("aaa");
-            oue.ouenflag();
+           // Debug.Log("aaa");
+            oue.ouenflag();   
             oue_vr.ouenflag();
             Destroy(item);
         }

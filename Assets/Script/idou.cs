@@ -17,9 +17,11 @@ public class idou : StrixBehaviour
 	public GameObject Maker;
 	public int zAdjust = -25;
 	public float speed;
+	public float speed2;
 	public int DesFlag;
 	public int left = 10;
 	public int right = -15;
+	public GameObject OVR;
     int a;
 
 	void Start()
@@ -37,39 +39,34 @@ public class idou : StrixBehaviour
 		Debug.LogWarning("right");
 		Debug.LogWarning(right);
 		*/
-		if (isLocal == false)
+		if (isLocal == false)  //クローンか否か
         {
+			Destroy(OVR);
 			return;
         }
 
 		//Debug.Log(Botan_PB.flag_p);
 
-		
 
-		if (Botan_PB.flag_p == DesFlag || Botan_PR.flag_p == DesFlag)
+		if (Botan_PB.flag_p == DesFlag || Botan_PR.flag_p == DesFlag)  //プレイヤー選択したか？
         {
 		//カメラはプレイヤーと同じ位置にする
 		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y+4, transform.position.z + zAdjust-5);
 		Maker.transform.position = new Vector3(transform.position.x+30, transform.position.y + 100, transform.position.z + zAdjust);
-            //mainCamera.transform.Rotate(0, transform.localEulerAngles.y, 0);
-            //TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
 
-        }
+		}
         else
         {
 			return;
         }
 
-		if (Input.GetKeyDown(KeyCode.A))
-		{
-			mainCamera.transform.Rotate(0, transform.localEulerAngles.y, 0);
-		}
-
+		//ひだり
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
 			transform.Rotate(0, 50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, 50 * Time.deltaTime, 0);
 		}
+		//みぎ
 		if (Arduino.handle_dif < right)
 		{
 			transform.Rotate(0, -50 * Time.deltaTime, 0);
@@ -80,17 +77,19 @@ public class idou : StrixBehaviour
 			transform.Rotate(0, -50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, -50 * Time.deltaTime, 0);
 		}
-
+		//ひだり
 		if (Arduino.handle_dif > left)
 		{
 			transform.Rotate(0, 50 * Time.deltaTime, 0);
 			mainCamera.transform.Rotate(0, -50 * Time.deltaTime, 0);
 		}
+		//かそく
 		if (Input.GetKeyDown(KeyCode.UpArrow))
 		{
-			speed -= 1;
+			speed -=0.2f;
 			a = 0;
 		}
+		//げんそく
 		if (Input.GetKeyDown(KeyCode.DownArrow))
 		{
 			if(speed < 0)
@@ -106,23 +105,22 @@ public class idou : StrixBehaviour
 
         if (timer.flag_stop == 1)
         {
-			speed = 0;
+			speed = 0;   //カウントダウン中強制停止
         }
 
+		speed2 = speed * ((1 + (Ouen_VR.kazu_o / 10)) * (1 + (Ouen.kazu_o / 10)));
 		transform.Translate(speed * ((1 + (Ouen_VR.kazu_o / 10)) * (1 + (Ouen.kazu_o / 10))) / 100, 0, 0);
 		a++;
         if (a > 2000)
         {
 			if(speed < 0)
             {
-				speed++;
+				speed++;   //すこしずつ減速
             }
 			a = 0;
         }
 	}
-public void speedup() {
-	//speed += -10;
-}
+
 
 	public void speedset(int amount)
 	{

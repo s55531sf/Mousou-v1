@@ -9,15 +9,13 @@ public class RedorBlue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Botan_PR.flag_p == 1)
+        if (Botan_PR.flag_p == 1) //Redplayer‘I‘ð
         {
             red.SetActive(true);
-            //blue.SetActive(false);
         }
-        else if (Botan_PB.flag_p==2 )
+        else if (Botan_PB.flag_p==2 ) //BluePlayer‘I‘ð
         {
             blue.SetActive(true);
-            //red.SetActive(false);
         }
     }
 

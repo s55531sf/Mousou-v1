@@ -20,7 +20,7 @@ public class timer : MonoBehaviour
         {
         if(CountDownTime > 0)
         {
-                flag_stop = 1;
+        flag_stop = 1;//カウントダウン中
         TextCountDown.text = String.Format("{0:00.00}", CountDownTime);
         CountDownTime -= Time.deltaTime;
         }
@@ -29,7 +29,7 @@ public class timer : MonoBehaviour
         {
             TextCountDown.text = String.Format("START!");
             goal.SetActive(true);
-            flag_stop = 2;
+            flag_stop = 2;//レーススタート
         }
         }
 }

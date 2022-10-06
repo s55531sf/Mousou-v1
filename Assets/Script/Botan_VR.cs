@@ -16,8 +16,6 @@ public class Botan_VR : MonoBehaviour
         {
             flag_vr = 0;
         }
-        Debug.Log("‰Ÿ‚³‚ê‚½!");  // ƒƒO‚ğo—Í
-        Debug.Log(flag_vr);
-        //SceneManager.LoadSceneAsync("Main");
+ 
     }
 }

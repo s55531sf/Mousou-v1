@@ -16,7 +16,6 @@ public class Ouen : MonoBehaviour
     public RectTransform ouen9;
     public RectTransform ouen10;
     public static float kazu_o = 0;
-    public static int num_o = 0;
     int flag_o = 0;
 
     void Start()
@@ -27,16 +26,16 @@ public class Ouen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ouen1.position += new Vector3(-0.5f, 0, 0);
-        ouen2.position += new Vector3(-0.5f, 0, 0);
-        ouen3.position += new Vector3(-0.5f, 0, 0);
-        ouen4.position += new Vector3(-0.5f, 0, 0);
-        ouen5.position += new Vector3(-0.5f, 0, 0);
-        ouen6.position += new Vector3(-0.5f, 0, 0);
-        ouen7.position += new Vector3(-0.5f, 0, 0);
-        ouen8.position += new Vector3(-0.5f, 0, 0);
-        ouen9.position += new Vector3(-0.5f, 0, 0);
-        ouen10.position += new Vector3(-0.5f, 0, 0);
+        ouen1.position += new Vector3(-1.5f, 0, 0);
+        ouen2.position += new Vector3(-1.5f, 0, 0);
+        ouen3.position += new Vector3(-1.5f, 0, 0);
+        ouen4.position += new Vector3(-1.5f, 0, 0);
+        ouen5.position += new Vector3(-1.5f, 0, 0);
+        ouen6.position += new Vector3(-1.5f, 0, 0);
+        ouen7.position += new Vector3(-1.5f, 0, 0);
+        ouen8.position += new Vector3(-1.5f, 0, 0);
+        ouen9.position += new Vector3(-1.5f, 0, 0);
+        ouen10.position += new Vector3(-1.5f, 0, 0);
         //ouen1.position = new Vector3(-488, 132, 0);
     }
 
@@ -53,7 +52,6 @@ public class Ouen : MonoBehaviour
 
     public void ouenflag()
     {
-        num_o++;
         kazu_o += 1;
         flag_o++;
         Debug.Log("kazu_o");

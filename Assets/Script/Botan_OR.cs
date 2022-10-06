@@ -10,8 +10,8 @@ public class Botan_OR : MonoBehaviour
     public void OnClick()
     {
         flag_p = 3;
-        Debug.Log("押された!");  // ログを出力
-        Debug.Log(flag_p);
+       //Debug.Log("押された!");  // ログを出力
+      //Debug.Log(flag_p);
         SceneManager.LoadSceneAsync("Main");
     }
 }

@@ -11,11 +11,11 @@ public class Fall : MonoBehaviour
     {
         if (collider.gameObject.tag == "Red")
         {
-            Debug.LogWarning("Fall");
+           // Debug.LogWarning("Fall");
             Vector3 angle = red.transform.eulerAngles;
-            red.transform.position = new Vector3(19.0f, 4.0f, -75.0f);
+            red.transform.position = new Vector3(19.0f, 4.0f, -75.0f); //‰Šú’l‚Öƒ[ƒv
             angle.y = 90.0f;
-            red.transform.eulerAngles = angle;
+            red.transform.eulerAngles = angle; //Œü‚«‚»‚ë‚¦‚é
 
         }
         if (collider.gameObject.tag == "Blue")

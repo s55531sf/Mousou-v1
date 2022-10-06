@@ -8,12 +8,9 @@ public class Arduino : MonoBehaviour
 {
 
     int test;
-    int test2;
-    int test3;
     int flag = 0;
     int handle_fir = 0;
     int handle=0;
-    string aa = "COM6";
     public static int handle_dif = 0;
     public static int speed_arduino = 0;
     SerialPort portNo = new SerialPort("COM6", 9600);
@@ -32,10 +29,8 @@ public class Arduino : MonoBehaviour
             try
             {
                 test = portNo.ReadByte();
-                //test2 = portNo.ReadByte();
-                //test3 = portNo.ReadByte();
-                Debug.Log("test");
-                Debug.Log(handle_dif);
+               // Debug.Log("test");
+               // Debug.Log(handle_dif);
 
                 if (test > 100)
                 {
@@ -48,14 +43,11 @@ public class Arduino : MonoBehaviour
                 }
                 if (test > 100&&flag==0)
                 {
-                    handle_fir = test;
+                    handle_fir = test;   //ハンドルの傾き初期値取得
                     flag = 1;
                 }
 
-                handle_dif = handle - handle_fir;
-                //Debug.Log("test2");
-                //Debug.LogWarning(test2);
-                // Debug.LogError(test3);
+                handle_dif = handle - handle_fir; //初期値からどれだけズレたか
 
             }
             catch (System.Exception)

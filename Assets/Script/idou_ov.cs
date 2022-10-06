@@ -20,8 +20,6 @@ public class idou_ov : MonoBehaviour
 			//カメラはプレイヤーと同じ位置にする
 			mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 			Maker.transform.position = new Vector3(transform.position.x + 30, transform.position.y + 100, transform.position.z + zAdjust);
-			//mainCamera.transform.Rotate(0, transform.localEulerAngles.y, 0);
-			//TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
 
 		}
 	}
@@ -34,17 +32,7 @@ public class idou_ov : MonoBehaviour
 			return;
 
 		}
-		/*
-		if (Botan_OR.flag_p == DesFlag)
-		{
-			//カメラはプレイヤーと同じ位置にする
-			mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y , transform.position.z );
-			Maker.transform.position = new Vector3(transform.position.x + 30, transform.position.y + 100, transform.position.z + zAdjust);
-			//mainCamera.transform.Rotate(0, transform.localEulerAngles.y, 0);
-			//TrackingSpace.transform.position = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z + zAdjust - 5);
 
-		}
-		*/
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
 			transform.Rotate(0, 50 * Time.deltaTime, 0);
