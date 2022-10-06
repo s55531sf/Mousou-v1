@@ -782,6 +782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: item (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1398600935454307511, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1405788350538374871, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
       propertyPath: Bike
       value: 
@@ -1286,6 +1290,10 @@ PrefabInstance:
     - target: {fileID: 1398600935454307511, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
       propertyPath: m_Name
       value: item (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398600935454307511, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1405788350538374871, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
       propertyPath: Bike
@@ -5013,6 +5021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: item (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1398600935454307511, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1405788350538374871, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
       propertyPath: Bike
       value: 
@@ -6059,6 +6071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   red: {fileID: 6669599918116753470}
   blue: {fileID: 8325901665103604346}
+  mode: {fileID: 1050691956}
 --- !u!4 &1050691958
 Transform:
   m_ObjectHideFlags: 0
@@ -6623,6 +6636,10 @@ PrefabInstance:
     - target: {fileID: 1398600935454307511, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
       propertyPath: m_Name
       value: item (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398600935454307511, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1405788350538374871, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
       propertyPath: Bike
@@ -8436,6 +8453,10 @@ PrefabInstance:
     - target: {fileID: 1398600935454307511, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
       propertyPath: m_Name
       value: item (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398600935454307511, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1405788350538374871, guid: 54afa6aaab5ee0141aeb57315c136dfe, type: 3}
       propertyPath: Bike

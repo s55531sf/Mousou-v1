@@ -8,6 +8,7 @@ public class OuenText : MonoBehaviour
     // UI TextŽw’è—p
     public Text TextFrame;
     public Text rank;
+    public GameObject canvas;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,11 @@ public class OuenText : MonoBehaviour
         }else
         {
             rank.text = string.Format("S");
+        }
+
+        if (Botan_PR.flag_p == 1 || Botan_PB.flag_p == 2)
+        {
+            canvas.SetActive(false);
         }
     }
 

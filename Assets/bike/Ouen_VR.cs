@@ -21,7 +21,7 @@ public class Ouen_VR : MonoBehaviour
 
     public void Start()
     {
-        InvokeRepeating("down", 1, 5);
+        InvokeRepeating("down", 1, 20);
     }
 
     void down()
@@ -173,8 +173,8 @@ public class Ouen_VR : MonoBehaviour
     public void ouenflag()
     {
         kazu_o += 1;
-        Debug.Log("kazu_o");
-        Debug.Log(kazu_o);
+        Debug.LogWarning("kazu_o");
+        Debug.LogWarning(kazu_o);
         if (kazu_o == 1)
         {
             ouen1.SetActive(true);
