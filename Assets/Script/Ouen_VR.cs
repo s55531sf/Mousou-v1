@@ -16,8 +16,18 @@ public class Ouen_VR : MonoBehaviour
     public GameObject ouen8;
     public GameObject ouen9;
     public GameObject ouen10;
+    public GameObject ouen1b;
+    public GameObject ouen2b;
+    public GameObject ouen3b;
+    public GameObject ouen4b;
+    public GameObject ouen5b;
+    public GameObject ouen6b;
+    public GameObject ouen7b;
+    public GameObject ouen8b;
+    public GameObject ouen9b;
+    public GameObject ouen10b;
 
-    
+
 
     public void Start()
     {
@@ -43,6 +53,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(false);
                 ouen9.SetActive(false);
                 ouen10.SetActive(false);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(false);
+                ouen3b.SetActive(false);
+                ouen4b.SetActive(false);
+                ouen5b.SetActive(false);
+                ouen6b.SetActive(false);
+                ouen7b.SetActive(false);
+                ouen8b.SetActive(false);
+                ouen9b.SetActive(false);
+                ouen10b.SetActive(false);
             }
             else if (kazu_o == 2)
             {
@@ -56,6 +76,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(false);
                 ouen9.SetActive(false);
                 ouen10.SetActive(false);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(true);
+                ouen3b.SetActive(false);
+                ouen4b.SetActive(false);
+                ouen5b.SetActive(false);
+                ouen6b.SetActive(false);
+                ouen7b.SetActive(false);
+                ouen8b.SetActive(false);
+                ouen9b.SetActive(false);
+                ouen10b.SetActive(false);
             }
             else if (kazu_o == 3)
             {
@@ -69,6 +99,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(false);
                 ouen9.SetActive(false);
                 ouen10.SetActive(false);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(true);
+                ouen3b.SetActive(true);
+                ouen4b.SetActive(false);
+                ouen5b.SetActive(false);
+                ouen6b.SetActive(false);
+                ouen7b.SetActive(false);
+                ouen8b.SetActive(false);
+                ouen9b.SetActive(false);
+                ouen10b.SetActive(false);
             }
             else if (kazu_o == 4)
             {
@@ -82,6 +122,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(false);
                 ouen9.SetActive(false);
                 ouen10.SetActive(false);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(true);
+                ouen3b.SetActive(true);
+                ouen4b.SetActive(true);
+                ouen5b.SetActive(false);
+                ouen6b.SetActive(false);
+                ouen7b.SetActive(false);
+                ouen8b.SetActive(false);
+                ouen9b.SetActive(false);
+                ouen10b.SetActive(false);
             }
             else if (kazu_o == 5)
             {
@@ -95,6 +145,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(false);
                 ouen9.SetActive(false);
                 ouen10.SetActive(false);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(true);
+                ouen3b.SetActive(true);
+                ouen4b.SetActive(true);
+                ouen5b.SetActive(true);
+                ouen6b.SetActive(false);
+                ouen7b.SetActive(false);
+                ouen8b.SetActive(false);
+                ouen9b.SetActive(false);
+                ouen10b.SetActive(false);
 
             }
             else if (kazu_o == 6)
@@ -109,6 +169,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(false);
                 ouen9.SetActive(false);
                 ouen10.SetActive(false);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(true);
+                ouen3b.SetActive(true);
+                ouen4b.SetActive(true);
+                ouen5b.SetActive(true);
+                ouen6b.SetActive(true);
+                ouen7b.SetActive(false);
+                ouen8b.SetActive(false);
+                ouen9b.SetActive(false);
+                ouen10b.SetActive(false);
 
             }
             else if (kazu_o == 7)
@@ -123,6 +193,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(false);
                 ouen9.SetActive(false);
                 ouen10.SetActive(false);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(true);
+                ouen3b.SetActive(true);
+                ouen4b.SetActive(true);
+                ouen5b.SetActive(true);
+                ouen6b.SetActive(true);
+                ouen7b.SetActive(true);
+                ouen8b.SetActive(false);
+                ouen9b.SetActive(false);
+                ouen10b.SetActive(false);
 
             }
             else if (kazu_o == 8)
@@ -137,6 +217,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(true);
                 ouen9.SetActive(false);
                 ouen10.SetActive(false);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(true);
+                ouen3b.SetActive(true);
+                ouen4b.SetActive(true);
+                ouen5b.SetActive(true);
+                ouen6b.SetActive(true);
+                ouen7b.SetActive(true);
+                ouen8b.SetActive(true);
+                ouen9b.SetActive(false);
+                ouen10b.SetActive(false);
 
             }
             else if (kazu_o == 9)
@@ -151,6 +241,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(true);
                 ouen9.SetActive(true);
                 ouen10.SetActive(false);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(true);
+                ouen3b.SetActive(true);
+                ouen4b.SetActive(true);
+                ouen5b.SetActive(true);
+                ouen6b.SetActive(true);
+                ouen7b.SetActive(true);
+                ouen8b.SetActive(true);
+                ouen9b.SetActive(true);
+                ouen10b.SetActive(false);
 
             }
             else if (kazu_o == 10)
@@ -165,6 +265,16 @@ public class Ouen_VR : MonoBehaviour
                 ouen8.SetActive(true);
                 ouen9.SetActive(true);
                 ouen10.SetActive(true);
+                ouen1b.SetActive(true);
+                ouen2b.SetActive(true);
+                ouen3b.SetActive(true);
+                ouen4b.SetActive(true);
+                ouen5b.SetActive(true);
+                ouen6b.SetActive(true);
+                ouen7b.SetActive(true);
+                ouen8b.SetActive(true);
+                ouen9b.SetActive(true);
+                ouen10b.SetActive(true);
                 kazu_o = 10;
             }
         }
@@ -187,6 +297,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(false);
             ouen9.SetActive(false);
             ouen10.SetActive(false);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(false);
+            ouen3b.SetActive(false);
+            ouen4b.SetActive(false);
+            ouen5b.SetActive(false);
+            ouen6b.SetActive(false);
+            ouen7b.SetActive(false);
+            ouen8b.SetActive(false);
+            ouen9b.SetActive(false);
+            ouen10b.SetActive(false);
         }
         else if (kazu_o == 2)
         {
@@ -200,6 +320,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(false);
             ouen9.SetActive(false);
             ouen10.SetActive(false);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(true);
+            ouen3b.SetActive(false);
+            ouen4b.SetActive(false);
+            ouen5b.SetActive(false);
+            ouen6b.SetActive(false);
+            ouen7b.SetActive(false);
+            ouen8b.SetActive(false);
+            ouen9b.SetActive(false);
+            ouen10b.SetActive(false);
         }
         else if (kazu_o == 3)
         {
@@ -213,6 +343,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(false);
             ouen9.SetActive(false);
             ouen10.SetActive(false);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(true);
+            ouen3b.SetActive(true);
+            ouen4b.SetActive(false);
+            ouen5b.SetActive(false);
+            ouen6b.SetActive(false);
+            ouen7b.SetActive(false);
+            ouen8b.SetActive(false);
+            ouen9b.SetActive(false);
+            ouen10b.SetActive(false);
         }
         else if (kazu_o == 4)
         {
@@ -226,6 +366,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(false);
             ouen9.SetActive(false);
             ouen10.SetActive(false);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(true);
+            ouen3b.SetActive(true);
+            ouen4b.SetActive(true);
+            ouen5b.SetActive(false);
+            ouen6b.SetActive(false);
+            ouen7b.SetActive(false);
+            ouen8b.SetActive(false);
+            ouen9b.SetActive(false);
+            ouen10b.SetActive(false);
         }
         else if (kazu_o == 5)
         {
@@ -239,6 +389,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(false);
             ouen9.SetActive(false);
             ouen10.SetActive(false);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(true);
+            ouen3b.SetActive(true);
+            ouen4b.SetActive(true);
+            ouen5b.SetActive(true);
+            ouen6b.SetActive(false);
+            ouen7b.SetActive(false);
+            ouen8b.SetActive(false);
+            ouen9b.SetActive(false);
+            ouen10b.SetActive(false);
 
         }
         else if (kazu_o == 6)
@@ -253,6 +413,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(false);
             ouen9.SetActive(false);
             ouen10.SetActive(false);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(true);
+            ouen3b.SetActive(true);
+            ouen4b.SetActive(true);
+            ouen5b.SetActive(true);
+            ouen6b.SetActive(true);
+            ouen7b.SetActive(false);
+            ouen8b.SetActive(false);
+            ouen9b.SetActive(false);
+            ouen10b.SetActive(false);
 
         }
         else if (kazu_o == 7)
@@ -267,6 +437,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(false);
             ouen9.SetActive(false);
             ouen10.SetActive(false);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(true);
+            ouen3b.SetActive(true);
+            ouen4b.SetActive(true);
+            ouen5b.SetActive(true);
+            ouen6b.SetActive(true);
+            ouen7b.SetActive(true);
+            ouen8b.SetActive(false);
+            ouen9b.SetActive(false);
+            ouen10b.SetActive(false);
 
         }
         else if (kazu_o == 8)
@@ -281,6 +461,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(true);
             ouen9.SetActive(false);
             ouen10.SetActive(false);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(true);
+            ouen3b.SetActive(true);
+            ouen4b.SetActive(true);
+            ouen5b.SetActive(true);
+            ouen6b.SetActive(true);
+            ouen7b.SetActive(true);
+            ouen8b.SetActive(true);
+            ouen9b.SetActive(false);
+            ouen10b.SetActive(false);
 
         }
         else if (kazu_o == 9)
@@ -295,6 +485,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(true);
             ouen9.SetActive(true);
             ouen10.SetActive(false);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(true);
+            ouen3b.SetActive(true);
+            ouen4b.SetActive(true);
+            ouen5b.SetActive(true);
+            ouen6b.SetActive(true);
+            ouen7b.SetActive(true);
+            ouen8b.SetActive(true);
+            ouen9b.SetActive(true);
+            ouen10b.SetActive(false);
 
         }
         else if (kazu_o == 10)
@@ -309,6 +509,16 @@ public class Ouen_VR : MonoBehaviour
             ouen8.SetActive(true);
             ouen9.SetActive(true);
             ouen10.SetActive(true);
+            ouen1b.SetActive(true);
+            ouen2b.SetActive(true);
+            ouen3b.SetActive(true);
+            ouen4b.SetActive(true);
+            ouen5b.SetActive(true);
+            ouen6b.SetActive(true);
+            ouen7b.SetActive(true);
+            ouen8b.SetActive(true);
+            ouen9b.SetActive(true);
+            ouen10b.SetActive(true);
             kazu_o = 10;
         }
 

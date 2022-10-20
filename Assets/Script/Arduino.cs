@@ -29,9 +29,10 @@ public class Arduino : MonoBehaviour
             try
             {
                 test = portNo.ReadByte();
-               // Debug.Log("test");
-               // Debug.Log(handle_dif);
-
+                /*
+                Debug.LogWarning("test");
+                Debug.LogWarning(test);
+                */
                 if (test > 100)
                 {
                     handle = test;
@@ -46,6 +47,17 @@ public class Arduino : MonoBehaviour
                     handle_fir = test;   //ハンドルの傾き初期値取得
                     flag = 1;
                 }
+
+                if (Input.GetKeyDown(KeyCode.Y))
+                {
+                    if (test > 100)
+                    {
+                        handle_fir = test;
+                    }
+                }
+
+                Debug.LogWarning("fir");
+                Debug.LogWarning(handle_fir);
 
                 handle_dif = handle - handle_fir; //初期値からどれだけズレたか
 

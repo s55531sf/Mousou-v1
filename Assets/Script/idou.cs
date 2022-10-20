@@ -109,7 +109,7 @@ public class idou : StrixBehaviour
         }
 
 		speed2 = speed * ((1 + (Ouen_VR.kazu_o / 10)) * (1 + (Ouen.kazu_o / 10)));
-		transform.Translate(speed * ((1 + (Ouen_VR.kazu_o / 10)) * (1 + (Ouen.kazu_o / 10))) / 100, 0, 0);
+		transform.Translate(speed * ((1 + (Ouen_VR.kazu_o / 10)) * (1 + (Ouen.kazu_o / 10))) / 90, 0, 0);
 		a++;
         if (a > 2000)
         {
